@@ -18,10 +18,8 @@ class TextLine:
 
 @dataclass
 class TextBlock:
-    # text: str
     lines: List[TextLine]
     bbox: Tuple[float, float, float, float]
-    font_size: float
 
 @dataclass
 class Table:
