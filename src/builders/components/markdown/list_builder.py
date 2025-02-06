@@ -6,6 +6,9 @@ class MarkdownListBuilder:
     @staticmethod
     def build(items: List[ListItem]) -> str:
         """Converte listas para sintaxe Markdown"""
+        if not items:
+            return ''
+        
         list_items = []
         for item in items:
             prefix = '- ' if item.list_type == 'ul' else '1. '
