@@ -1,15 +1,17 @@
 from ast import Dict
 from typing import Tuple
 import fitz
+from core.contracts.ipage_formatter import IFormatter
 from core.domain.models import ListItem, PageData , Table, TextBlock, TextLine, TextSpan
 from formatters.html_formatter import HtmlFormatter
 from detectors.list_detector import ListDetector
 
 class PageProcessor:
-    def __init__(self, page, margin_x: float, margin_y: float):
+    def __init__(self, page, margin_x: float, margin_y: float, formatter: IFormatter):
         self.page = page
         self.margin_x = margin_x
         self.margin_y = margin_y
+        self.formatter = formatter
 
     def process_page(self) -> PageData:
         """Processa uma única página do PDF"""
@@ -52,7 +54,7 @@ class PageProcessor:
 
         for block in text_blocks:
 
-            formatted_text = HtmlFormatter.format_text_block(block)
+            formatted_text = self.formatter.format(block)
             list_type = ListDetector.detect(block)
 
             if list_type:

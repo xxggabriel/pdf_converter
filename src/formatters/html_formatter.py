@@ -1,10 +1,11 @@
 from typing import List, Tuple, Dict
+from core.contracts.ipage_formatter import IFormatter
 from core.domain.models import TextBlock, TextLine, TextSpan
 
 
-class HtmlFormatter:
+class HtmlFormatter(IFormatter):
     @staticmethod
-    def format_text_block(block: TextBlock) -> str:
+    def format(block: TextBlock) -> str:
         """Formata um bloco de texto completo para HTML"""
         lines_html = [
             HtmlFormatter._format_line(line, block.bbox) 

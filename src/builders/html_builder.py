@@ -2,8 +2,8 @@ from typing import Dict, List
 
 from core.domain.models import PageData
 from core.contracts.ihtml_builder import IHtmlBuilder
-from builders.components.table_builder import TableBuilder
-from builders.components.list_builder import ListBuilder
+from builders.components.html.table_builder import TableBuilder
+from builders.components.html.list_builder import ListBuilder
 
 from formatters.html_formatter import HtmlFormatter
 
@@ -46,7 +46,7 @@ class HtmlBuilder(IHtmlBuilder):
         
         # Processar blocos de texto
         elements.extend(
-            self.html_formatter.format_text_block(block)
+            self.html_formatter.format(block)
             for block in page.text_blocks
         )
         
