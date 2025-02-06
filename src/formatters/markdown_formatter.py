@@ -14,7 +14,7 @@ class MarkdownFormatter(IFormatter):
                 # Aplicar estilos básicos
                 if span.flags & 2**1:  # Itálico
                     text = f'*{text}*'
-                if span.flags & 4:     # Negrito (flags 2**2)
+                if span.flags & 2**4:     # Negrito (flags 2**2)
                     text = f'**{text}**'
                 line_text += text
             formatted_text.append(line_text)
