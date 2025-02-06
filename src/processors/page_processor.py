@@ -89,8 +89,7 @@ class PageProcessor:
         spans = [span for line in block["lines"] for span in line["spans"]]
         return TextBlock(
             bbox=block['bbox'],
-            lines=[self._create_text_line(line) for line in block["lines"]],
-            font_size=spans[0]["size"] if spans else 12
+            lines=[self._create_text_line(line) for line in block["lines"]]
         )
     def _create_text_line(self, line) -> TextLine:
         """Cria um objeto TextLine a partir de uma linha processada"""
