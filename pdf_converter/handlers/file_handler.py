@@ -1,5 +1,5 @@
 
-from core.contracts.ifile_handler import IFileHandler
+from pdf_converter.core.contracts.ifile_handler import IFileHandler
 
 class FileHandler(IFileHandler):
     @staticmethod

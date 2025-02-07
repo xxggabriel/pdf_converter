@@ -1,8 +1,8 @@
 from typing import List, Dict
-from builders.components.markdown.list_builder import MarkdownListBuilder
-from builders.components.markdown.table_builder import MarkdownTableBuilder
-from core.domain.models import PageData, Table, ListItem, TextBlock
-from formatters.markdown_formatter import MarkdownFormatter
+from pdf_converter.builders.components.markdown.list_builder import MarkdownListBuilder
+from pdf_converter.builders.components.markdown.table_builder import MarkdownTableBuilder
+from pdf_converter.core.domain.models import PageData, Table, ListItem, TextBlock
+from pdf_converter.formatters.markdown_formatter import MarkdownFormatter
 
 class MarkdownBuilder:
     def __init__(self):
