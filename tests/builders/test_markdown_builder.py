@@ -1,11 +1,11 @@
 
 
 import pytest
-from pdf_converter.formatters.markdown_formatter import AdvancedMarkdownFormatter, MarkdownFormatter
-from pdf_converter.core.domain.models import ListItem, PageData, Table, TextBlock, TextLine, TextSpan
-from pdf_converter.builders.markdown_builder import MarkdownBuilder
-from pdf_converter.builders.components.markdown.list_builder import MarkdownListBuilder
-from pdf_converter.builders.components.markdown.table_builder import MarkdownTableBuilder
+from formatters.markdown_formatter import AdvancedMarkdownFormatter, MarkdownFormatter
+from core.domain.models import ListItem, PageData, Table, TextBlock, TextLine, TextSpan
+from builders.markdown_builder import MarkdownBuilder
+from builders.components.markdown.list_builder import MarkdownListBuilder
+from builders.components.markdown.table_builder import MarkdownTableBuilder
 
 
 # Fixtures

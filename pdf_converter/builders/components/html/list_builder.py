@@ -1,5 +1,5 @@
 from typing import List
-from pdf_converter.core.domain.models import ListItem
+from core.domain.models import ListItem
 
 
 class ListBuilder:

@@ -1,5 +1,5 @@
 import re
-from pdf_converter.core.domain.models import TextBlock
+from core.domain.models import TextBlock
 
 class ListDetector:
     LIST_PATTERNS = {

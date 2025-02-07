@@ -1,4 +1,4 @@
-from pdf_converter.core.domain.models import Table
+from core.domain.models import Table
 
 
 class TableBuilder:

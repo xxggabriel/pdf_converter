@@ -2,7 +2,7 @@
 from abc import ABC, abstractmethod
 from typing import Dict, List
 
-from pdf_converter.core.domain.models import PageData
+from core.domain.models import PageData
 
 
 class IHtmlBuilder(ABC):

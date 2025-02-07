@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Dict, List, Tuple
-from pdf_converter.core.domain.models import PageData
+from core.domain.models import PageData
 
 class iPdfProcessor(ABC):
     

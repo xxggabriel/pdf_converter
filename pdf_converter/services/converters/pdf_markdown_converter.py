@@ -1,7 +1,7 @@
-from pdf_converter.formatters.markdown_formatter import MarkdownFormatter
-from pdf_converter.processors.pdf_processor import PdfProcessor
-from pdf_converter.builders.markdown_builder import MarkdownBuilder
-from pdf_converter.handlers.file_handler import FileHandler
+from formatters.markdown_formatter import MarkdownFormatter
+from processors.pdf_processor import PdfProcessor
+from builders.markdown_builder import MarkdownBuilder
+from handlers.file_handler import FileHandler
 
 class PdfToMarkdownConverter:
     @staticmethod
