@@ -11,6 +11,13 @@ pdf_converter.egg-info/top_level.txt
 pdf_converter/builders/__init__.py
 pdf_converter/builders/html_builder.py
 pdf_converter/builders/markdown_builder.py
+pdf_converter/builders/components/__init__.py
+pdf_converter/builders/components/html/__init__.py
+pdf_converter/builders/components/html/list_builder.py
+pdf_converter/builders/components/html/table_builder.py
+pdf_converter/builders/components/markdown/__init__.py
+pdf_converter/builders/components/markdown/list_builder.py
+pdf_converter/builders/components/markdown/table_builder.py
 pdf_converter/core/__init__.py
 pdf_converter/core/contracts/__init__.py
 pdf_converter/core/contracts/ifile_handler.py
