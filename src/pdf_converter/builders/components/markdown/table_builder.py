@@ -1,4 +1,4 @@
-from core.domain.models import Table
+from pdf_converter.core.domain.models import Table
 
 
 class MarkdownTableBuilder:

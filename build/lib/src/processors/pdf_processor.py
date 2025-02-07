@@ -1,10 +1,10 @@
 import fitz
 from typing import List, Dict, Tuple
 
-from core.contracts.ipage_formatter import IFormatter
-from core.domain.models import PageData
-from core.contracts.ipdf_processor import iPdfProcessor
-from processors.page_processor import PageProcessor
+from pdf_converter.core.contracts.ipage_formatter import IFormatter
+from pdf_converter.core.domain.models import PageData
+from pdf_converter.core.contracts.ipdf_processor import iPdfProcessor
+from pdf_converter.processors.page_processor import PageProcessor
 
 
 class PdfProcessor(iPdfProcessor):

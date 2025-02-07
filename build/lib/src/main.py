@@ -1,5 +1,5 @@
-from services.converters.pdf_html_converter import PdfToHtmlConverter
-from services.converters.pdf_markdown_converter import PdfToMarkdownConverter
+from pdf_converter.services.converters.pdf_html_converter import PdfToHtmlConverter
+from pdf_converter.services.converters.pdf_markdown_converter import PdfToMarkdownConverter
 
 def main():
     

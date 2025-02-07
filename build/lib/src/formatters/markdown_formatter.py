@@ -1,5 +1,5 @@
-from core.contracts.ipage_formatter import IFormatter
-from core.domain.models import TextBlock
+from pdf_converter.core.contracts.ipage_formatter import IFormatter
+from pdf_converter.core.domain.models import TextBlock
 
 
 class MarkdownFormatter(IFormatter):

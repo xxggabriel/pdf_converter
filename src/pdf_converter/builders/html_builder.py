@@ -1,11 +1,11 @@
 from typing import Dict, List
 
-from core.domain.models import PageData
-from core.contracts.ihtml_builder import IHtmlBuilder
-from builders.components.html.table_builder import TableBuilder
-from builders.components.html.list_builder import ListBuilder
+from pdf_converter.core.domain.models import PageData
+from pdf_converter.core.contracts.ihtml_builder import IHtmlBuilder
+from pdf_converter.builders.components.html.table_builder import TableBuilder
+from pdf_converter.builders.components.html.list_builder import ListBuilder
 
-from formatters.html_formatter import HtmlFormatter
+from pdf_converter.formatters.html_formatter import HtmlFormatter
 
 
 class HtmlBuilder(IHtmlBuilder):

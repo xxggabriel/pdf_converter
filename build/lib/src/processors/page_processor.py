@@ -1,10 +1,10 @@
 from ast import Dict
 from typing import Tuple
 import fitz
-from core.contracts.ipage_formatter import IFormatter
-from core.domain.models import ListItem, PageData , Table, TextBlock, TextLine, TextSpan
-from formatters.html_formatter import HtmlFormatter
-from detectors.list_detector import ListDetector
+from pdf_converter.core.contracts.ipage_formatter import IFormatter
+from pdf_converter.core.domain.models import ListItem, PageData , Table, TextBlock, TextLine, TextSpan
+from pdf_converter.formatters.html_formatter import HtmlFormatter
+from pdf_converter.detectors.list_detector import ListDetector
 
 class PageProcessor:
     def __init__(self, page, margin_x: float, margin_y: float, formatter: IFormatter):

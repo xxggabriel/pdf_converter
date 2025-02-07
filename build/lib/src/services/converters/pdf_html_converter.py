@@ -1,7 +1,7 @@
-from formatters.html_formatter import HtmlFormatter
-from processors.pdf_processor import PdfProcessor
-from builders.html_builder import HtmlBuilder
-from handlers.file_handler import FileHandler
+from pdf_converter.formatters.html_formatter import HtmlFormatter
+from pdf_converter.processors.pdf_processor import PdfProcessor
+from pdf_converter.builders.html_builder import HtmlBuilder
+from pdf_converter.handlers.file_handler import FileHandler
 
 class PdfToHtmlConverter:
     @staticmethod
